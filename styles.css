@@ -184,17 +184,20 @@ img {
         margin-left: 0;
     }
 
-    header {
-        justify-content: space-around;
-    }
     .circle {
-        width: 80vw;
-        height: 75vw;
-        top: 200px;
+        width: 85vw;
+        height: 70vw;
+        top: 100px;
         left: 10vw;
     }
     header {
         border-bottom-left-radius: 80px;
+        justify-content: center;
+        height: 200px;
+    }
+
+    #accountAccess {
+        margin-left: 20px;
     }
 
     img {
@@ -222,9 +225,5 @@ img {
     .menu-links.responsive a:hover:not(:first-child) {
         color: #ff8573;
         background-color: #fafafa;
-    }
-
-    header {
-        justify-content: space-evenly;
     }
 }
