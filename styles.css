@@ -23,7 +23,7 @@ header {
 
 section {
     max-width: 100vw;
-    height: 600px;
+    height: 900px;
     background-color: #FAFAFA;
     z-index: 3;
     position: relative;
@@ -31,8 +31,12 @@ section {
 }
 
 .sectionTitle {
-    font-size: 21px;
+    font-size: 24px;
+    font-weight:700;
     text-align: center;
+    display: block;
+    margin-bottom: 50px;
+    z-index:3;
 }
 
 .circle {
@@ -141,19 +145,29 @@ button {
     font-weight: 700;
 }
 
+.midsection {
+    text-align: center;
+    padding: 20px 20px 20px 100px;
+}
+
 .description {
-    position:relative;
-    display: inline-block;
+    display: inline;
     max-width: 500px;
     text-align: left;
     line-height: 1.6;
+    margin-top: 20px;
+    float: left;
 }
 
 img {
+    width: 40%;
+    height: 25%;
     position: relative;
-    width: 25vw;
-    height: auto;
-    float:right;
+    display: inline;
+    float:left;
+    margin-left: 100px;
+    margin-top: 50px;
+    border-radius: 25px;
 }
 
 @media only screen and (max-width: 750px){
@@ -172,6 +186,16 @@ img {
     }
     header {
         border-bottom-left-radius: 80px;
+    }
+
+    img {
+        float:none;
+        margin: 5px auto;
+        width: 85%;
+        height: 60%;
+    }
+    section {
+        text-align: center;
     }
 
     
