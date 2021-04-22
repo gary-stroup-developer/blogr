@@ -28,13 +28,11 @@ section {
     z-index: 3;
     position: relative;
     padding-top: 100px;
-    text-align: center;
 }
 
 .sectionTitle {
     font-size: 21px;
-    
-
+    text-align: center;
 }
 
 .circle {
@@ -144,12 +142,15 @@ button {
 }
 
 .description {
+    position:relative;
+    display: inline-block;
     max-width: 500px;
     text-align: left;
     line-height: 1.6;
 }
 
 img {
+    position: relative;
     width: 25vw;
     height: auto;
     float:right;
