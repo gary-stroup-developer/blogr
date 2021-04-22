@@ -113,9 +113,9 @@ a {
     display: none;
 }
 
-a:hover {
-    font-weight: 800;
-    font-size: 21px;
+a:hover:not(:first-child ){
+    background-color: #FAFAFA;
+    color: #ff8573;
 }
 
 #title {
@@ -181,5 +181,9 @@ button {
     .menu-links.responsive a:hover:not(:first-child) {
         color: #ff8573;
         background-color: #fafafa;
+    }
+
+    header {
+        justify-content: space-evenly;
     }
 }
