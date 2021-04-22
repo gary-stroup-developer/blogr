@@ -74,6 +74,21 @@ nav {
     z-index: 2;
 }
 
+#login {
+    display: inline-block;
+}
+
+button {
+    padding: 8px 20px;
+    color:#ff8573;
+    background-color: #fafafa;
+    display: inline-block;
+    border: none;
+    border-radius: 20px;
+    margin-left: 15px;
+    font-weight: 700;
+}
+
 
 .fa-angle-down {
     color: #fafafa;
@@ -112,21 +127,6 @@ a:hover:not(:first-child ){
 
 }
 
-
-#login {
-    display: inline-block;
-}
-
-button {
-    padding: 8px 20px;
-    color:#ff8573;
-    background-color: #fafafa;
-    display: inline-block;
-    border: none;
-    border-radius: 20px;
-    margin-left: 15px;
-    font-weight: 700;
-}
 
 section {
     height: 900px;
@@ -192,12 +192,19 @@ img {
     }
     header {
         border-bottom-left-radius: 80px;
-        justify-content: center;
+        justify-content: space-evenly;
         height: 200px;
     }
 
     #accountAccess {
-        margin-left: 20px;
+        display: flex;
+        flex-direction: column;
+        margin-right: 0;
+        align-items: left;
+        justify-content: center;
+    }
+    button {
+        margin-left: 0;
     }
 
     img {
