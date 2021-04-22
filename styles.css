@@ -143,6 +143,12 @@ button {
     font-weight: 700;
 }
 
+.description {
+    max-width: 500px;
+    text-align: left;
+    line-height: 1.6;
+}
+
 img {
     width: 25vw;
     height: auto;
