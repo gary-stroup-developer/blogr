@@ -271,7 +271,8 @@ img {
         font-size: 190px;
     }
     .stateOfArt {
-        margin-top: 50px;
+        float: none;
+        margin: 50px auto;
         color:#191919;
     }
 
