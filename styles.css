@@ -129,11 +129,11 @@ a:hover:not(:first-child ){
 
 
 #section-one {
-    height: 825px;
     background-color: #FAFAFA;
-    z-index: 3;
-    padding: 100px 0;
     position: relative;
+    height: 825px;
+    z-index: 4;
+    padding: 100px 0;
 }
 
 .sectionTitle {
@@ -179,7 +179,7 @@ img {
 
 #second-section {
     position:relative;
-    background-color: #343572;
+    background: linear-gradient(235deg,#7374bb, #343572);
     border-bottom-left-radius: 80px;
     border-top-right-radius: 80px;
     height: 300px;
@@ -194,6 +194,11 @@ img {
     z-index: 4;
 }
 
+.fa-columns {
+    font-size: 400px;
+    color: #343572;
+}
+
 .phone2 {
     color:#ff8573;
     font-size: 300px;
@@ -206,9 +211,9 @@ img {
 .stateOfArt {
     position: relative;
     max-width: 350px;
-    float: right;
     color: #FAFAFA;
     margin-right: 25px;
+    float:right;
     z-index: 4;
 }
 
@@ -216,7 +221,32 @@ img {
     line-height: 1.6;
 }
 
-@media only screen and (max-width: 950px){
+/* third section */
+
+#section-three {
+    position: relative;
+    height: 600px;
+    padding: 25px;
+    margin-top: 75px;
+}
+
+#section-three div {
+    max-width: 350px;
+    float: right;
+    margin-left: 25px;
+    position: relative;
+}
+
+.article {
+    line-height: 1.6;
+}
+
+.fa-laptop {
+    font-size: 350px;
+    margin-left: 50px;
+}
+
+@media only screen and (max-width: 990px){
     .menu-links a:not(:first-child) {display:none;}
     .menu-links a.icon {
         font-size: 36px;
@@ -264,6 +294,7 @@ img {
 
     #second-section {
         margin-top: 125px;
+        margin-bottom: 250px;
         height: 200px;
     }
 
@@ -276,9 +307,18 @@ img {
         color:#191919;
     }
 
+    #section-three div {
+        float: none;
+        margin: 50px auto;
+    }
+
+    .fa-columns, .fa-laptop {
+        font-size: 300px;
+    }
+
 }
 
-@media screen and (max-width: 950px){
+@media screen and (max-width: 990px){
     .menu-links.responsive {position:relative;}
 
     .menu-links.responsive a {
@@ -299,7 +339,16 @@ img {
 
     img {
         width: 300px;
+    }
 
+    .fa-columns {
+        font-size: 250px;
+    }
+
+    .fa-laptop {
+        font-size: 250px;
+        margin-left: 25px;
+        margin-top: 50px;
     }
 
     #second-section {
