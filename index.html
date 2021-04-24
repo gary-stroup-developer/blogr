@@ -22,26 +22,38 @@
             <div class="rectangle" id="rect1"></div>
             <div class="rectangle" id="rect2"></div>
             <div class="rectangle" id="rect3"></div>
-            <nav>
-                <p id="title">Blogr</p>
-                <div class="menu-links" id="menu-links">
-                    <a href="#" class="icon" onclick="myFunction()"><i class="fas fa-ellipsis-h"></i></a>
-                    <a href="#">Product <i class="fas fa-angle-down"></i></a>
-                    <a href="#">Company <i class="fas fa-angle-down"></i></a>
-                    <a href="#">Connect <i class="fas fa-angle-down"></i></a>
+            <div id="nav">
+                <nav>
+                    <p class="title">Blogr</p>
+                    <div class="menu-links" id="menu-links">
+                        <a href="#" class="icon" onclick="myFunction()"><i class="fas fa-ellipsis-h"></i></a>
+                        <a href="#">Product <i class="fas fa-angle-down"></i></a>
+                        <a href="#">Company <i class="fas fa-angle-down"></i></a>
+                        <a href="#">Connect <i class="fas fa-angle-down"></i></a>
+                    </div>
+                </nav>
+                <div class="accountAccess">
+                    <p id="login">Login</p>
+                    <p class="button">Sign Up</p>
                 </div>
-            </nav>
-            <div id="accountAccess">
-                <p id="login">Login</p>
-                <button>Sign Up</button>
             </div>
+            <div id="header-content">
+                <p class="title content-title">A modern publishing platform</p>
+                <h5>Grow your audience and build your online brand</h5>
+                <div class="accountAccess">
+                    <p class="button">Start for Free</p>
+                    <p class="button-nonactive">Learn More</p>
+                </div>
+                
+            </div>
+        
         </header>
             <section id="section-one">
                 <p class="sectionTitle">Designed for the Future</p>
                 <div class="midsection">
                     <div class="description">
                         <h2>Introducing an extensible editor</h2>
-                        <p>Blogr features an exceedingly intuitive interface which lets you focus
+                        <p class="article">Blogr features an exceedingly intuitive interface which lets you focus
                             on one thing: creating content. The editor supports management of 
                             multiple blogs and allows easy manipulation of embeds such as images,
                             videos, and Markdown. Extensibility with plugins and themes provide
@@ -49,7 +61,7 @@
                         </p>
                         
                         <h2>Robust content management</h2>
-                        <p>
+                        <p class="article">
                             Flexible content management enables users to easily move through
                             posts. Increase the usability of your blog by adding customized 
                             categories, sections, format, or flow. With this functionality, you're in 
@@ -68,15 +80,18 @@
                 <i class="fas fa-mobile phone2"></i>
                 <div class="stateOfArt">
                     <h2>State of the Art Infrastructure</h2>
-                    <p> With reliability and speed in mind, worldwide data centers provide the 
+                    <p class="article"> With reliability and speed in mind, worldwide data centers provide the 
                        backbone for ultra-fast connectivity. This ensures your site will load 
                        instantly, no matter where your readers are, keeping your site competitve.
                     </p>
                 </div>
             </section>
             <section id="section-three">
-                <i class="fas fa-laptop"></i>
-                <div>
+                <div class="laptop">
+                    <i class="fas fa-laptop"></i>
+                </div>
+                
+                <div id="section-three-article">
                     <h2>Free, open, simple</h2>
                     <p class="article">Blogr is a free and open source application backed by a large
                         community of helpful developers. It supports features such as code 
@@ -84,11 +99,38 @@
                         commenting tools, and works seamlessly with Google Analytics. The 
                         architecture is clean and is relatively easy to learn.
                     </p>
+                    <h2>Powerful tooling</h2>
+                    <p class="article">Batteries included. We built a simple and straightforward CLI tool that 
+                        makes customization and deployment a breeze, but capable of producing 
+                        even the most complicated sites.
+                    </p>
 
                 </div>
-              
-
             </section>
+            <footer>
+                <p class="title">Blogr</p>
+                <div class="footer-container">
+                    <p class="footer-container-header">Product</p>
+                    <a class = "footer-link" href="#">Overview</a>
+                    <a class = "footer-link" href="#">Pricing</a>
+                    <a class = "footer-link" href="#">Marketplace</a>
+                    <a class = "footer-link" href="#">Features</a>
+                    <a class = "footer-link" href="#">Integrations</a>
+                </div>
+                <div class="footer-container">
+                    <p class="footer-container-header">Company</p>
+                    <a class="footer-link" href="#">About</a>
+                    <a class="footer-link" href="#">Team</a>
+                    <a class="footer-link" href="#">Blog</a>
+                    <a class="footer-link" href="#">Careers</a>
+                </div>
+                <div class="footer-container">
+                    <p class="footer-container-header">Connect</p>
+                    <a class="footer-link" href="#">Contact</a>
+                    <a class="footer-link" href="#">Newsletter</a>
+                    <a class="footer-link" href="#">LinkedIn</a>
+                </div>
+            </footer>
             
         <script src="blogr.js" async defer></script>
     </body>

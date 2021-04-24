@@ -14,10 +14,10 @@ header {
     background-color: #ff8573;
     color: #fafafa;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
     padding: 0 25px;
-    height: 450px;
     border-bottom-left-radius: 75px;
 }
 
@@ -63,22 +63,31 @@ header {
     bottom: -10px;
 }
 
+#nav {
+    z-index: 3;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 nav {
     display: flex;
     align-items: center;
-    z-index: 2;
+    z-index: 3;
 }
 
-#accountAccess {
-    margin-right: 50px;
-    z-index: 2;
+.accountAccess {
+    display: flex;
+    align-items:center;
+    z-index: 3;
 }
 
 #login {
     display: inline-block;
 }
 
-button {
+.button {
     padding: 8px 20px;
     color:#ff8573;
     background-color: #fafafa;
@@ -87,6 +96,24 @@ button {
     border-radius: 20px;
     margin-left: 15px;
     font-weight: 700;
+}
+
+.button-nonactive {
+    padding: 8px 20px;
+    border: 1px solid #FAFAFA;
+    border-radius: 20px;
+    margin-left: 15px;
+    font-weight: 700;
+}
+
+#header-content {
+    display: flex;
+    width: 100%;
+    z-index: 3;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 75px;
 }
 
 
@@ -118,7 +145,7 @@ a:hover:not(:first-child ){
     color: #ff8573;
 }
 
-#title {
+.title {
     font-family: 'Montserrat', sans-serif;
     font-size: 36px;
     display: inline-block;
@@ -161,9 +188,6 @@ a:hover:not(:first-child ){
     padding-left: 50px;
 }
 
-.description p {
-    line-height: 1.6;
-}
 
 #img {
     display: flex;
@@ -217,34 +241,78 @@ img {
     z-index: 4;
 }
 
-.stateOfArt p {
-    line-height: 1.6;
-}
-
 /* third section */
 
 #section-three {
-    position: relative;
+    /* position: relative;
     height: 600px;
     padding: 25px;
-    margin-top: 75px;
+    margin-top: 75px; */
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
 }
 
-#section-three div {
+#section-three-article {
+    display: flex;
+    flex-direction: column;
     max-width: 350px;
-    float: right;
-    margin-left: 25px;
-    position: relative;
+    /* max-width: 350px;
+    float: right; */
+    
 }
 
 .article {
     line-height: 1.6;
 }
 
+.laptop {
+    /* display: inline;
+    float:left; */
+    display: inline-block;
+    margin-right: 100px;
+}
+
 .fa-laptop {
     font-size: 350px;
     margin-left: 50px;
 }
+
+/* Footer Styling */
+
+footer {
+    display: flex;
+    color: #FAFAFA;
+    background: linear-gradient(235deg,#7374bb, #343572);
+    border-bottom-left-radius: 80px;
+    border-top-right-radius: 80px;
+    justify-content: space-evenly;
+    align-items:flex-start;
+    margin-top: 200px;
+}
+
+.footer-container {
+    font-size: 11px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding: 20px 5px;
+}
+
+.footer-container-header {
+    display: flex;
+    margin-left: 20px;
+}
+
+.footer-link {
+    text-decoration: none;
+    line-height: 1.6;
+}
+
+
+
+/* Media Queries */
 
 @media only screen and (max-width: 990px){
     .menu-links a:not(:first-child) {display:none;}
@@ -261,17 +329,7 @@ img {
         top: 100px;
         left: 10vw;
     }
-    header {
-        border-bottom-left-radius: 80px;
-        justify-content: space-evenly;
-        height: 200px;
-    }
 
-    #accountAccess {
-        display: flex;
-        flex-direction: column;
-        margin-right: 0;
-    }
 
     .description {
         padding: 0;
@@ -307,9 +365,23 @@ img {
         color:#191919;
     }
 
-    #section-three div {
-        float: none;
-        margin: 50px auto;
+    #section-three {
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content: space-around;
+        margin-top: 300px;
+    }
+
+    .article {
+        margin-top: 0;
+    }
+
+    .laptop {
+        margin-right: 0;
+    }
+    .fa-laptop {
+        margin-left: 0;
     }
 
     .fa-columns, .fa-laptop {
@@ -335,6 +407,12 @@ img {
     }
 }
 
+@media screen and (max-width:650px){
+    .content-title {
+        font-size: 28px;
+    }
+}
+
 @media screen and (max-width:400px){
 
     img {
@@ -347,12 +425,15 @@ img {
 
     .fa-laptop {
         font-size: 250px;
-        margin-left: 25px;
-        margin-top: 50px;
+        margin-top: 75px;
     }
 
     #second-section {
         margin-top: 75px;
         height: 150px;
+    }
+
+    .content-title {
+        font-size: 21px;
     }
 }
