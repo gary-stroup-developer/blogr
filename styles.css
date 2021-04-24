@@ -269,7 +269,6 @@ img {
 .laptop {
     /* display: inline;
     float:left; */
-    color:#343572;
     display: inline-block;
     margin-right: 100px;
 }
@@ -277,6 +276,7 @@ img {
 .fa-laptop {
     font-size: 350px;
     margin-left: 50px;
+    color:#343572;
 }
 
 /* Footer Styling */
