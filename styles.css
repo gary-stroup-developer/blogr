@@ -266,21 +266,15 @@ img {
 /* third section */
 
 #section-three {
-    /* position: relative;
-    height: 600px;
-    padding: 25px;
-    margin-top: 75px; */
     display: flex;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 250px;
 }
 
 #section-three-article {
     display: flex;
     flex-direction: column;
     max-width: 350px;
-    /* max-width: 350px;
-    float: right; */
     
 }
 
@@ -289,8 +283,6 @@ img {
 }
 
 .laptop {
-    /* display: inline;
-    float:left; */
     display: inline-block;
     margin-right: 100px;
 }
