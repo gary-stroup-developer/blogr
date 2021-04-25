@@ -33,6 +33,28 @@ header {
     top: 80px;
 }
 
+.circle-sm {
+    background-color: #f87763;
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    border-radius: 50%;
+    position: absolute;
+    top: 50px;
+    right: 0px;
+}
+
+.circle-md {
+    background-color: #f87763;
+    width: 400px;
+    height: 400px;
+    display: inline-block;
+    border-radius: 50%;
+    position: absolute;
+    top: -275px;
+    left: 45%;
+}
+
 
 .rectangle {
     border-radius: 75px;
@@ -346,10 +368,6 @@ footer {
         flex-direction: column;
     }
 
-    
-    #rect2, #rect3 {
-        display: none;
-    }
 
     #second-section {
         margin-top: 125px;
@@ -389,6 +407,28 @@ footer {
         font-size: 300px;
     }
 
+    .circle-sm {
+        background-color: #f87763;
+        width: 100px;
+        height: 100px;
+        display: inline-block;
+        border-radius: 50%;
+        position: absolute;
+        top: 50px;
+        left: 0px;
+    }
+    
+    .circle-md {
+        background-color: #f87763;
+        width: 300px;
+        height: 300px;
+        display: inline-block;
+        border-radius: 50%;
+        position: absolute;
+        top: -225px;
+        left: 45%;
+    }
+
 }
 
 @media screen and (max-width: 990px){
@@ -412,6 +452,8 @@ footer {
     .content-title {
         font-size: 28px;
     }
+
+  
 }
 
 @media screen and (max-width:400px){
