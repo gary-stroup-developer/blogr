@@ -383,6 +383,9 @@ footer {
         margin: 50px auto;
         color:#191919;
     }
+    #section-three-article {
+        margin-top: 25px;
+    }
 
     #section-three {
         display: flex;
