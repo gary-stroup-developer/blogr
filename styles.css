@@ -429,7 +429,7 @@ footer {
         border-radius: 50%;
         position: absolute;
         top: -225px;
-        left: 45%;
+        left: 20%;
     }
 
 }
@@ -455,8 +455,6 @@ footer {
     .content-title {
         font-size: 28px;
     }
-
-  
 }
 
 @media screen and (max-width:400px){
@@ -481,5 +479,10 @@ footer {
 
     .content-title {
         font-size: 21px;
+    }
+
+    .circle-md {
+        width: 275px;
+        height:275px;
     }
 }
